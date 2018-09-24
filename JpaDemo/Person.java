@@ -2,12 +2,16 @@ package com.vk.JpaDemo;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
 /**
  * Simple Person POJO!
  *
  */
 @Entity
+@Table(name="person")
+@NamedQuery(name="Person.findAll", query="SELECT e FROM Person e")
 public class Person {
 	
 	@Id

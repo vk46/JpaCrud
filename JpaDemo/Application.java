@@ -34,7 +34,10 @@ public class Application
 //			em.persist(person);
 			
 			//read person object
-			Person person = em.find(Person.class, 3);
+			Person person = em.find(Person.class, 1);
+			
+			//get all records by using createNamedQuery and getResultList
+//			List<Person> person = em.createNamedQuery("Person.findAll").getResultList();
 			
 			//update person object
 //			person.setTech("Asp.Net");

@@ -1,4 +1,4 @@
-package com.telusko.JpaDemo;
+package com.vk.JpaDemo;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

@@ -1,21 +1,20 @@
 package com.vk.JpaDemo;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.NamedQuery;
-import javax.persistence.Table;
 
 /**
  * Simple Person POJO!
  *
  */
 @Entity
-@Table(name="person")
-@NamedQuery(name="Person.findAll", query="SELECT e FROM Person e")
 public class Person {
 	
 	@Id
-	private int pid;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	protected Long pid;
 	
 	private String pname;
 	
@@ -24,14 +23,14 @@ public class Person {
 	/**
 	 * @return the pid
 	 */
-	public int getPid() {
+	public Long getPid() {
 		return pid;
 	}
 
 	/**
 	 * @param pid the pid to set
 	 */
-	public void setPid(int pid) {
+	public void setPid(Long pid) {
 		this.pid = pid;
 	}
 

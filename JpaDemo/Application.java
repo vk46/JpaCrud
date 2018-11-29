@@ -19,10 +19,9 @@ public class Application
 		
 		try{
 			//create new person
-//			Person person = new Person();
-//			person.setPid(3);
-//			person.setPname("Chai");
-//			person.setTech(".Net");
+			Person person = new Person();
+			person.setPname("Ram");
+			person.setTech("RPA");
 
 			EntityManagerFactory emf = Persistence.createEntityManagerFactory("vk");
 			EntityManager em = emf.createEntityManager();
@@ -31,13 +30,10 @@ public class Application
 			em.getTransaction().begin();
 
 			//create person object
-//			em.persist(person);
+			em.persist(person);
 			
 			//read person object
-			Person person = em.find(Person.class, 1);
-			
-			//get all records by using createNamedQuery and getResultList
-//			List<Person> person = em.createNamedQuery("Person.findAll").getResultList();
+//			Person person = em.find(Person.class, 3);
 			
 			//update person object
 //			person.setTech("Asp.Net");

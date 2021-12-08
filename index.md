@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+### JpaCrud
 
-You can use the [editor on GitHub](https://github.com/vk46/JpaCrud/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The Java Persistence API (JPA) is a Java specification for accessing, persisting, and managing data between Java objects / classes and a relational database. JPA is now considered the standard industry approach for Object to Relational Mapping (ORM) in the Java Industry. JPA is specification, and requires an implementation. JPA also defines a runtime EntityManager API for processing queries and transaction on the objects against the database.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Application.java
 
-### Markdown
+This java file consist of logic of CRUD operation using EntityManager and EntityManagerFactory
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Person.java
 
-```markdown
-Syntax highlighted code block
+Person POJO class
 
-# Header 1
-## Header 2
-### Header 3
+### AppTest.java
 
-- Bulleted
-- List
+Java unit testing class
 
-1. Numbered
-2. List
+### persistence.xml
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vk46/JpaCrud/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+XML file consist of DB properties
